@@ -4,6 +4,7 @@
  * `staleDays` count so the UI can show "Data X days old" warnings.
  */
 import { browser } from '$app/environment';
+import { base } from '$app/paths';
 
 export interface FleetBoat {
   id: string;
@@ -29,8 +30,8 @@ interface CacheEnvelope<T> {
   payload: T;
 }
 
-const FLEET_URL = '/data/fleet.json';
-const PRICING_URL = '/data/pricing.json';
+const FLEET_URL = `${base}/data/fleet.json`;
+const PRICING_URL = `${base}/data/pricing.json`;
 const FLEET_KEY = 'letsboat:cache:fleet';
 const PRICING_KEY = 'letsboat:cache:pricing';
 const SEVEN_DAYS_MS = 7 * 24 * 60 * 60 * 1000;
