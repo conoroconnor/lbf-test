@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Let's Boat — Loading…</title>
+<meta name="theme-color" content="#0A2540">
+<meta name="description" content="Let's Boat trip tracker — redirecting to app.">
+<style>
+  html, body { margin: 0; padding: 0; background: #0A2540; color: #fff; height: 100%; font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", system-ui, sans-serif; }
+  .wrap { display: flex; align-items: center; justify-content: center; height: 100vh; flex-direction: column; gap: 12px; padding: 20px; box-sizing: border-box; text-align: center; }
+  .brand { font-size: 22px; font-weight: 300; letter-spacing: 0.5px; }
+  .sub { font-size: 13px; opacity: 0.65; }
+  .dot { display: inline-block; width: 8px; height: 8px; background: #A8D0E6; border-radius: 50%; animation: pulse 1.2s ease-in-out infinite; }
+  @keyframes pulse { 0%, 100% { opacity: 0.3; transform: scale(0.8); } 50% { opacity: 1; transform: scale(1.1); } }
+</style>
+<script>
+(function () {
+  var segments = 1;
+  var l = window.location;
+  l.replace(
+    l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+    l.pathname.split('/').slice(0, 1 + segments).join('/') + '/?/' +
+    l.pathname.slice(1).split('/').slice(segments).join('/').replace(/&/g, '~and~') +
+    (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+    l.hash
+  );
+})();
+</script>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand">Let's Boat</div>
+    <div class="sub"><span class="dot"></span> &nbsp;Loading…</div>
+    <noscript>This app requires JavaScript.</noscript>
+  </div>
+</body>
+</html>

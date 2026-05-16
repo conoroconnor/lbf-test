@@ -82,3 +82,8 @@
 {"type":"edit","file":"/Users/conor/projects/letsboat-app/src/routes/trip/[id]/+page.svelte","timestamp":1778948265367,"sessionId":null}
 {"type":"edit","file":"/Users/conor/projects/letsboat-app/src/components/TripList.svelte","timestamp":1778948266790,"sessionId":null}
 {"type":"edit","file":"/Users/conor/projects/letsboat-app/src/components/TripList.svelte","timestamp":1778948268410,"sessionId":null}
+{"type":"edit","file":"/Users/conor/projects/letsboat-app/src/app.html","timestamp":1778948326656,"sessionId":null}
+{"type":"edit","file":"/Users/conor/projects/letsboat-app/static/manifest.webmanifest","timestamp":1778948345875,"sessionId":null}
+{"type":"edit","file":"/Users/conor/projects/letsboat-app/static/404.html","timestamp":1778948358155,"sessionId":null}
+{"type":"edit","file":"/Users/conor/projects/letsboat-app/package.json","timestamp":1778948372158,"sessionId":null}
+{"type":"edit","file":"/Users/conor/projects/letsboat-app/scripts/postbuild.mjs","timestamp":1778948379737,"sessionId":null}

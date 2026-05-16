@@ -16,6 +16,18 @@
     <link rel="manifest" href="%sveltekit.assets%/manifest.webmanifest" />
     <link rel="stylesheet" href="%sveltekit.assets%/brand.css" />
     <title>Let's Boat — Trip Tracker</title>
+    <script>
+      (function (l) {
+        if (l.search.indexOf('?/') === 0) {
+          var decoded = l.search
+            .slice(1)
+            .split('&')
+            .map(function (s) { return s.replace(/~and~/g, '&'); })
+            .join('?');
+          window.history.replaceState(null, '', l.pathname + decoded + l.hash);
+        }
+      })(window.location);
+    </script>
     %sveltekit.head%
   </head>
   <body data-sveltekit-preload-data="hover">
