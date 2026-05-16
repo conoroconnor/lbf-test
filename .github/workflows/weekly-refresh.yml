@@ -1,0 +1,41 @@
+name: Weekly data refresh
+
+on:
+  schedule:
+    # Sundays 06:00 UTC — gives Cloudflare Pages a clean Monday morning rebuild
+    - cron: '0 6 * * 0'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - run: npm ci
+
+      - name: Scrape fleet
+        run: npm run scrape:fleet
+
+      - name: Scrape pricing
+        run: npm run scrape:pricing
+
+      - name: Commit changes if any
+        run: |
+          git config user.name "letsboat-bot"
+          git config user.email "actions@github.com"
+          git add static/data/fleet.json static/data/pricing.json
+          if git diff --staged --quiet; then
+            echo "No changes."
+          else
+            git commit -m "data: weekly refresh $(date -u +%Y-%m-%d)"
+            git push
+          fi

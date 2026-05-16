@@ -1,3 +1,23 @@
 .superpowers/
 node_modules/
 dist/
+
+# SvelteKit + Vite chassis
+.svelte-kit/
+build/
+.vite/
+.DS_Store
+
+# Env
+.env
+.env.*
+!.env.example
+
+# Editor / OS
+.idea/
+.vscode/
+*.log
+
+# Local agent/swarm state (do not commit)
+.claude-flow/
+.swarm/

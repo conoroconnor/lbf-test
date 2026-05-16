@@ -1,0 +1,7 @@
+{
+  "gasoline_eur_per_l": 1.85,
+  "diesel_eur_per_l": 1.62,
+  "last_updated_iso": "2026-05-16T00:00:00.000Z",
+  "source": "seed-fallback",
+  "sample_stations": []
+}

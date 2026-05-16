@@ -1,0 +1,16 @@
+:root {
+  --navy: #0A2540;
+  --navy-soft: #14365A;
+  --white: #FFFFFF;
+  --paper: #F7F9FC;
+  --line: #E2E8F0;
+  --accent: #A8D0E6;
+  --text: #0A2540;
+  --text-muted: #6B7280;
+  --success: #2E9B6B;
+  --warn: #D97706;
+  --danger: #DC2626;
+  --radius: 14px;
+  --font: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", system-ui, sans-serif;
+}
+html, body { background: var(--paper); color: var(--text); font-family: var(--font); margin: 0; }

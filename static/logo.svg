@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" role="img" aria-label="Let's Boat">
+  <title>Let's Boat</title>
+  <desc>Navy circular mark with white "LB" monogram and LETSBOAT wordmark.</desc>
+  <g>
+    <circle cx="60" cy="60" r="58" fill="#0A2540"/>
+    <text
+      x="60"
+      y="78"
+      text-anchor="middle"
+      font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', system-ui, sans-serif"
+      font-size="56"
+      font-weight="700"
+      fill="#FFFFFF"
+      letter-spacing="-1"
+    >LB</text>
+  </g>
+  <text
+    x="160"
+    y="150"
+    text-anchor="middle"
+    font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', system-ui, sans-serif"
+    font-size="34"
+    font-weight="600"
+    fill="#0A2540"
+    letter-spacing="6"
+  >LETSBOAT</text>
+</svg>
