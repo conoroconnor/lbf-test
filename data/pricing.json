@@ -1,0 +1,32 @@
+{
+  "gasoline_eur_per_l": 1.659,
+  "diesel_eur_per_l": 1.734,
+  "last_updated_iso": "2026-05-16T15:47:00.415Z",
+  "source": "geoportalgasolineras.es",
+  "sample_stations": [
+    {
+      "name": "REPSOL",
+      "address": "AVENIDA JULIO IGLESIAS-PTO BANUS, 1",
+      "gasoline": 1.669,
+      "diesel": 1.739
+    },
+    {
+      "name": "GALP",
+      "address": "CARRETERA CN-340 NUEVA ANDALUCIA KM. 173",
+      "gasoline": null,
+      "diesel": 1.729
+    },
+    {
+      "name": "BALLENOIL",
+      "address": "CALLE JOSÉ MARÍA PEMÁN, 28",
+      "gasoline": 1.515,
+      "diesel": 1.649
+    },
+    {
+      "name": "SHELL",
+      "address": "CARRETERA N-340 KM. 176",
+      "gasoline": 1.659,
+      "diesel": 1.749
+    }
+  ]
+}

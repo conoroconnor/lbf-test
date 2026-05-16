@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1"
+    />
+    <meta name="theme-color" content="#0A2540" />
+    <meta name="description" content="Let's Boat — Trip Tracker for letsboat.club members." />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Let's Boat" />
+    <link rel="icon" href="/lbf-test/logo.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/lbf-test/icons/icon-192.png" />
+    <link rel="manifest" href="/lbf-test/manifest.webmanifest" />
+    <link rel="stylesheet" href="/lbf-test/brand.css" />
+    <title>Let's Boat — Trip Tracker</title>
+    <script>
+      (function (l) {
+        if (l.search.indexOf('?/') === 0) {
+          var decoded = l.search
+            .slice(1)
+            .split('&')
+            .map(function (s) { return s.replace(/~and~/g, '&'); })
+            .join('?');
+          window.history.replaceState(null, '', l.pathname + decoded + l.hash);
+        }
+      })(window.location);
+    </script>
+    <link href="/lbf-test/_app/immutable/entry/start.0jL4UoIN.js" rel="modulepreload">
+		<link href="/lbf-test/_app/immutable/chunks/DN4FPjEn.js" rel="modulepreload">
+		<link href="/lbf-test/_app/immutable/chunks/BZkXBDZN.js" rel="modulepreload">
+		<link href="/lbf-test/_app/immutable/chunks/DVUkKtk8.js" rel="modulepreload">
+		<link href="/lbf-test/_app/immutable/chunks/ByQn1mxd.js" rel="modulepreload">
+		<link href="/lbf-test/_app/immutable/entry/app.CQitb3v6.js" rel="modulepreload">
+		<link href="/lbf-test/_app/immutable/chunks/CQwdMeoJ.js" rel="modulepreload">
+		<link href="/lbf-test/_app/immutable/chunks/B6HRU9yP.js" rel="modulepreload">
+		<link href="/lbf-test/_app/immutable/chunks/BtGmWvti.js" rel="modulepreload">
+		<link href="/lbf-test/_app/immutable/chunks/QMkQHSgl.js" rel="modulepreload">
+		<link href="/lbf-test/_app/immutable/nodes/0.D64rMBKi.js" rel="modulepreload">
+		<link href="/lbf-test/_app/immutable/chunks/Dfa-IlUL.js" rel="modulepreload">
+		
+		<link href="/lbf-test/_app/immutable/assets/0.h-pGQfNq.css" rel="stylesheet">
+  </head>
+  <body data-sveltekit-preload-data="hover">
+    <div style="display: contents">
+			<script>
+				{
+					__sveltekit_1u4aut6 = {
+						base: "/lbf-test",
+						assets: "/lbf-test"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("/lbf-test/_app/immutable/entry/start.0jL4UoIN.js"),
+						import("/lbf-test/_app/immutable/entry/app.CQitb3v6.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element);
+					});
+				}
+			</script>
+		</div>
+  </body>
+</html>

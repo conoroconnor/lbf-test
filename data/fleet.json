@@ -1,0 +1,30 @@
+{
+  "fetched_at_iso": "2026-05-16T00:00:00.000Z",
+  "source": "seed-fallback",
+  "boats": [
+    {
+      "id": "flying-manta",
+      "label": "The Flying Manta",
+      "engineId": "suzuki-df250",
+      "engineLabel": "Suzuki DF250",
+      "hp": 250,
+      "category": "powerboat"
+    },
+    {
+      "id": "blue-marlin",
+      "label": "The Blue Marlin",
+      "engineId": "volvo-penta-300",
+      "engineLabel": "Volvo Penta 300",
+      "hp": 300,
+      "category": "powerboat"
+    },
+    {
+      "id": "sea-hawk",
+      "label": "The Sea Hawk",
+      "engineId": "suzuki-df150",
+      "engineLabel": "Suzuki DF150",
+      "hp": 150,
+      "category": "powerboat"
+    }
+  ]
+}
