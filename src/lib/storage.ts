@@ -95,8 +95,16 @@ function getDb(): Promise<IDBPDatabase<LetsBoatSchema>> {
   return dbPromise;
 }
 
-/** Test-only helper: forget the cached connection so a fresh open occurs. */
-export function _resetDbForTests(): void {
+/** Test-only helper: close any open connection and forget the cache so a fresh open occurs. */
+export async function _resetDbForTests(): Promise<void> {
+  if (dbPromise) {
+    try {
+      const db = await dbPromise;
+      db.close();
+    } catch {
+      // ignore — caller wants a clean slate regardless
+    }
+  }
   dbPromise = null;
 }
 

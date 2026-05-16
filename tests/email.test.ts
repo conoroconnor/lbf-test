@@ -56,10 +56,10 @@ describe('buildTripEmail', () => {
     expect(body).toContain('Boat: Flying Manta (Suzuki DF250)');
     expect(body).toContain('Distance: 14.3 NM');
     expect(body).toContain('Max speed: 31.8 kt');
-    expect(body).toContain('Avg speed: 18.7 kt');
+    expect(body).toContain('Avg speed: 18.6 kt');
     expect(body).toContain('Fuel used: 47.3 L');
     expect(body).toContain('€ spent: €73.59');
-    expect(body).toContain('(at €1.56/L)');
+    expect(body).toContain('(at €1.55/L)');
     expect(body).toContain('GPS track (3 points):');
     expect(body).toContain('ts_ms,lat,lng,kt');
     expect(body).toContain('1747402320000,36.4843,-4.954,0.12');

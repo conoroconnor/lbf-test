@@ -57,3 +57,7 @@
 {"type":"edit","file":"/Users/conor/projects/letsboat-app/tests/setup.ts","timestamp":1778944602585,"sessionId":null}
 {"type":"edit","file":"/Users/conor/projects/letsboat-app/tests/integration/full-trip.test.ts","timestamp":1778944872054,"sessionId":null}
 {"type":"edit","file":"/Users/conor/projects/letsboat-app/tests/README.md","timestamp":1778944930781,"sessionId":null}
+{"type":"edit","file":"/Users/conor/projects/letsboat-app/src/lib/storage.ts","timestamp":1778945404186,"sessionId":null}
+{"type":"edit","file":"/Users/conor/projects/letsboat-app/tests/storage.test.ts","timestamp":1778945411083,"sessionId":null}
+{"type":"edit","file":"/Users/conor/projects/letsboat-app/tests/email.test.ts","timestamp":1778945469819,"sessionId":null}
+{"type":"edit","file":"/Users/conor/projects/letsboat-app/tests/email.test.ts","timestamp":1778945508584,"sessionId":null}

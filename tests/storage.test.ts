@@ -40,7 +40,7 @@ function makeTrip(overrides: Partial<StoredTrip> = {}): StoredTrip {
 // starts from a clean DB.
 beforeEach(async () => {
   // Drop the cached connection then delete the underlying database.
-  _resetDbForTests();
+  await _resetDbForTests();
   await new Promise<void>((resolve, reject) => {
     const req = indexedDB.deleteDatabase('letsboat-tracker');
     req.onsuccess = () => resolve();
