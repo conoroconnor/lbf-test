@@ -1,6 +1,7 @@
 <script lang="ts">
   import { onMount } from 'svelte';
   import { goto } from '$app/navigation';
+  import { base } from '$app/paths';
   import { loadFleet, loadPricing, daysSinceIso } from '$lib/data';
   import type { FleetJson, PricingJson } from '$lib/data';
   import { getSettings, listTrips } from '$lib/storage';
@@ -30,7 +31,7 @@
       console.warn('getSettings failed', err);
     }
     if (!settings?.selectedBoatId) {
-      void goto('/setup');
+      void goto(`${base}/setup`);
       return;
     }
     try {
@@ -47,7 +48,7 @@
   });
 
   function startTrip() {
-    void goto('/trip');
+    void goto(`${base}/trip`);
   }
 
   function emailLastTrip() {
@@ -68,7 +69,7 @@
 
 <main>
   <header class="head">
-    <a class="settings" href="/settings" aria-label="Settings">Settings</a>
+    <a class="settings" href="{base}/settings" aria-label="Settings">Settings</a>
     <p class="kicker">Let's Boat Marbella</p>
     <h1>{selectedBoat?.label ?? '—'}</h1>
     <p class="sub">{selectedBoat?.engineLabel ?? ''}</p>

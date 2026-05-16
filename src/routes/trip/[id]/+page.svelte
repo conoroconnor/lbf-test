@@ -1,5 +1,6 @@
 <script lang="ts">
   import { onMount } from 'svelte';
+  import { base } from '$app/paths';
   import { page } from '$app/stores';
   import { getTrip } from '$lib/storage';
   import type { StoredTrip } from '$lib/storage';
@@ -72,7 +73,7 @@
 
 <main>
   <header>
-    <a class="back" href="/" aria-label="Back to home">←</a>
+    <a class="back" href="{base}/" aria-label="Back to home">←</a>
     <h1>{boat?.label ?? trip?.boatId ?? 'Trip'}</h1>
     <p class="date">{trip ? formatDate(trip.startedAtIso) : ''}</p>
   </header>

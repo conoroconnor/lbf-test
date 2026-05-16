@@ -1,6 +1,7 @@
 <script lang="ts">
   import type { StoredTrip } from '$lib/storage';
   import { goto } from '$app/navigation';
+  import { base } from '$app/paths';
 
   export let trips: StoredTrip[] = [];
   export let emptyLabel: string = 'No trips yet — your first one will appear here.';
@@ -22,7 +23,7 @@
   }
 
   function open(id: string) {
-    void goto(`/trip/${id}`);
+    void goto(`${base}/trip/${id}`);
   }
 </script>
 

@@ -1,6 +1,7 @@
 <script lang="ts">
   import { onMount, onDestroy } from 'svelte';
   import { goto } from '$app/navigation';
+  import { base } from '$app/paths';
   import { loadFleet, loadPricing } from '$lib/data';
   import type { FleetJson, PricingJson, FleetBoat } from '$lib/data';
   import { getSettings, saveTrip } from '$lib/storage';
@@ -66,7 +67,7 @@
       settings = null;
     }
     if (!settings?.selectedBoatId) {
-      void goto('/setup');
+      void goto(`${base}/setup`);
       return;
     }
     try {
@@ -201,7 +202,7 @@
         points
       };
       await saveTrip(stored);
-      void goto(`/trip/${id}`);
+      void goto(`${base}/trip/${id}`);
     } catch (err) {
       console.error('saveTrip failed', err);
       stopping = false;
@@ -216,7 +217,7 @@
 
 <main>
   <header>
-    <a class="back" href="/" aria-label="Back to home">←</a>
+    <a class="back" href="{base}/" aria-label="Back to home">←</a>
     <p class="kicker">
       {boat?.label ?? '—'} · {boat?.engineLabel ?? ''}
     </p>

@@ -1,6 +1,7 @@
 <script lang="ts">
   import { onMount } from 'svelte';
   import { goto } from '$app/navigation';
+  import { base } from '$app/paths';
   import { loadFleet } from '$lib/data';
   import type { FleetJson } from '$lib/data';
   import { getSettings, saveSettings } from '$lib/storage';
@@ -31,7 +32,7 @@
     saving = true;
     try {
       await saveSettings({ selectedBoatId: selectedId });
-      void goto('/');
+      void goto(`${base}/`);
     } catch (err) {
       error = err instanceof Error ? err.message : String(err);
       saving = false;

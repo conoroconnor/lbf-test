@@ -1,5 +1,6 @@
 <script lang="ts">
   import { onMount } from 'svelte';
+  import { base } from '$app/paths';
   import { loadFleet, loadPricing } from '$lib/data';
   import type { FleetJson, PricingJson } from '$lib/data';
   import {
@@ -106,7 +107,7 @@
 
 <main>
   <header>
-    <a class="back" href="/" aria-label="Back to home">←</a>
+    <a class="back" href="{base}/" aria-label="Back to home">←</a>
     <h1>Settings</h1>
   </header>
 
